@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Inter';
+    background-image: url('https://xp.network/assets/img/art_images/home_back.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh);
+    color: #040D27;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.b {
+    width: 100%;
+}
+.container {
+    width: 100%;
+}
+button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 129%;
+    width: 126px;
+    text-align: center;
+    letter-spacing: .03em;
+    color: #fff;
+    opacity: .9;
+    display: inline-block;
+    background: #3180F6;
+    border-radius: 8px;
+    padding: 6px 11px;
+    transition: .3s ease all;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p {
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 22px;
+}
+.container p:first-child {
+    margin-top: 15px;
+}
+select {
+    font-size: 16px;
+    padding-left: 4px;
+    background: #EDF0F8;
+border: 1px solid #D9DFED;
+box-sizing: border-box;
+border-radius: 6px;
+width: 140px;
+height: 32px;
+margin-right: 12px;
+}
+
+#info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#button { 
+    margin-top: 30px;
+    width: 126px;
+    font-weight: 400;
+}
+
+.release {
+}
+
+.int {
+    min-width: 222px;
+    width: fit-content;
+height: 207px;
+background-color: #fff;
+border: 1px solid #E5E8F0;
+font-size: 48px;
+display: flex;
+flex-direction: column;
+margin: 10px;
+
+}
+
+.int h3 {
+    font-size: 18px;
+    border-bottom: 1px solid #e5e8f0;
+    height: 50px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.int p {
+    font-size: 26px;
+    margin-top: 60px;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px);
+    margin-bottom: 40px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.cont {
+    max-width: 990px;
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 0px 10px;
+}
+
+.connectmeta {
+    width: 402px;
+height: 375px;
+overflow-x: hidden;
+
+background: #FFFFFF;
+border: 1px solid #E5E8F0;
+box-sizing: border-box;
+border-radius: 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.connectmeta {
+    font-weight: 600;
+    font-size: 18px;
+}
+.oneside {
+    display: flex;
+    align-items: center;
+}
+
+.seperator {
+    margin: 0px 4px;
+}
+#connect img {
+    margin-bottom: 20px;
+}
+.warning {
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+}
+strong {
+    font-weight: 600;
+}
+@media(max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .connectmeta {
+        width: calc(100% - 20px);
+    }
+    #info {
+        flex-direction: column;
+        width: 100%;
+    }
+    .actions {
+        margin-top: 30px;
+    }
+    .container {
+        width: fit-content;
+    }
+    .b {
+        display: flex;
+        justify-content: center;
+    }
+}
